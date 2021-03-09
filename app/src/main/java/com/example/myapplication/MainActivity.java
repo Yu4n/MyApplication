@@ -22,5 +22,10 @@ public class MainActivity extends AppCompatActivity {
                 editText.setText(builder);
             }
         });
+        Button clearButton= findViewById(R.id.clearBtn);
+        clearButton.setOnClickListener(v -> {
+            EditText editText =findViewById(R.id.editMessage);
+            editText.setText("");
+        });
     }
 }
