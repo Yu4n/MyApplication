@@ -17,10 +17,13 @@ public class SecondActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        final Intent intent=getIntent();
+        String msg = intent.getStringExtra("message");
+        binding.textView.setText(msg);
         binding.startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SecondActivity.this, MainActivity.class);
+                intent.setClass(SecondActivity.this, MainActivity.class);
                 startActivity(intent);
             } });
     }

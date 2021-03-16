@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         binding.startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,
-                        SecondActivity.class);
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                intent.putExtra("message", "This is a message from the First Activity");
                 startActivity(intent);
             } });
     }
