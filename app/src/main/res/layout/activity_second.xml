@@ -8,11 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Start First Activity" />
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="This is the second activity"
-        android:textSize="18sp" />
+        android:hint="Enter a message"
+        />
 </LinearLayout>
