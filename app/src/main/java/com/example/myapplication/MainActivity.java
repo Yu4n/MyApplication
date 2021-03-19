@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if(resultCode == RESULT_OK){
-                String message=data.getStringExtra("message");
-                binding.textView.setText(message);
+                com.example.task7.Student message=data.getParcelableExtra("message");
+                binding.textView.setText(message.getName() + '\n' + message.getSurname() + '\n' + message.getId());
             }
         }
     }

@@ -20,8 +20,11 @@ public class SecondActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent returnIntent = getIntent();
-                String message= binding.editText.getText().toString();
-                returnIntent.putExtra("message",message);
+                com.example.task7.Student std = new com.example.task7.Student();
+                std.setName(binding.editText.getText().toString());
+                std.setSurname(binding.editText1.getText().toString());
+                std.setId(Integer.parseInt(binding.editText2.getText().toString()));
+                returnIntent.putExtra("message",std);
                 setResult(RESULT_OK,returnIntent);
                 finish();
             } });
