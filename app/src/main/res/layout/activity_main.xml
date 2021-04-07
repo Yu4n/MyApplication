@@ -3,10 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <EditText
         android:id="@+id/editText"
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="name surname salary (with a space)"/>
     <Button
         android:id="@+id/addButton"
@@ -15,21 +16,16 @@
         android:layout_below="@+id/editText"
         android:text="Add to Database" />
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/addButton"/>
-    <Button
-        android:id="@+id/readButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:text="Read Database" />
-    <TextView
-        android:id="@+id/textView_read"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/readButton"/>
+    <!--<Button
+    android:id="@+id/readButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView"
+    android:text="Read Database" /> !-->
     <Button
         android:id="@+id/deleteButton"
         android:layout_width="match_parent"
@@ -52,4 +48,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/updateButton"/>
+    <TextView
+        android:id="@+id/textView_read"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSilver"
+        android:layout_below="@+id/textView_update"/>
+
 </LinearLayout>
